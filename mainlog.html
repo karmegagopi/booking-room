@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage.com</title>
+    <link rel="stylesheet" href="mainlog.css">
+</head>
+<body>
+
+    <!-- heading -->
+
+    <div class="topic">
+        <h1>GUEST ROOM BOOKING</h1>
+    </div><hr>
+    <br>
+
+    <!--login form-->
+
+    <button class="open-button" onclick="openForm()">CUSTOMER REGISTER HERE</button>
+    
+<div class="form-popup" id="myForm">
+  <form action="file:///C:/Users/Admin/Desktop/cartrabbit/home.html" class="form-container">
+    <h1>LOGIN</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="number"><b>Mobile Number</b></label>
+    <input type="tel" placeholder="+91"  name="psw" minlength="10" maxlength="10">
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+    
+    
+    <script src="mainlog.js"></script>
+</body>
+</html>

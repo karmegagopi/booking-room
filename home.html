@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage.com</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR-->
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fa fa-bed" href="#"> HEAVEN Rooms</a>
+
+      <ul class="nav nav-pills fw-bold" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rent">Rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-2 bg-">
+    <h2>BE Royal - BE Unique</h2>
+    <hr>
+  </div>
+
+
+
+  <!-- OFFCANVAS-->
+
+  <div class="offcanvas offcanvas-start text-bg-dark" id="offcan">
+    <div class="offcanvas-header">
+      <h1 class="offcanvas-title">Register Here</h1>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <label for="number"><b>ID NO</b></label>
+      <input type="text" placeholder="Enter room ID" name="id" required>
+      <br><br>
+      <label for="number"><b>Mobile</b></label>
+      <input type="tel" placeholder="+91" name="psw" required><br><br>
+      <label for="datemin"><b>Check in</b></label>
+      <input type="date" id="datemin" name="datemin"><br><br>
+
+      <label for="datemax"><b>Check out</b></label>
+      <input type="date" id="datemax" name="datemax"><br><br>
+
+      <input type="checkbox" id="adult" name="adult" value="adult">
+      <label for="adult">Adult</label><br>
+      <input type="checkbox" id="children" name="children" value="children">
+      <label for="childern">Children</label><br>
+      <input type="checkbox" id="senior citizen" name="senior citizen" value="senior citizen">
+      <label for="senior citizen">Senior Citizen</label><br><br>
+
+      <label for="number">Total Count : </label>
+      <input style="width: 60px;" type="number" id="number" name="num"><br><br>
+
+      <button style="background-color: blue;color: white;padding: 5px;border-radius: 7px;" type="button"
+        onclick="alert('Successfully BOOKED....THANK YOU VISIT AGAIN..')">Confirm Booking</button>
+    </div>
+  </div>
+
+
+  <!-- Carousel -->
+  <section id="home">
+    <div id="car1" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#car1" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#car1" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#car1" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="mainimg1.jpg" alt="Los Angeles" class="d-block" style="width:100%; height:600px;">
+        </div>
+        <div class="carousel-item">
+          <img src="main2.jpg" alt="Chicago" class="d-block" style="width:100%; height:600px;">
+        </div>
+        <div class="carousel-item">
+          <img src="main3.jpg" alt="New York" class="d-block" style="width:100%; height:600px;">
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#car1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#car1" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- center heading -->
+
+  <div class="mt-2 ms-2 me-2 p-2  text-dark border border-primary">
+    <h1>LIMITED Room Available Book Soon...</h1>
+    <b>
+      <p class="ms-5">Pay Less......Spend More</p>
+    </b>
+  </div><br>
+
+  <!--CARD-->
+
+  <section id="rent">
+    <div class="row ms-5">
+      <div class="card col-4" style="width:395px">
+        <img class="card-img-top" src="carimg1.jpg" alt="Card image" style="width:95%">
+        <div class="card-body">
+          <div class="dropdown dropend ms-5">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+              more details...
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2BHK</a></li>
+              <li><a class="dropdown-item text-danger" href="#">4.6 Rating</a></li>
+              <li><a class="dropdown-item" href="#">A/C</a></li>
+            </ul>
+          </div>
+          <h4 class="card-title">RS - 799 per day</h4>
+          <p class="card-text">ID - 011</p>
+          <button class="btn btn-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card col-4" style="width:400px">
+        <img class="card-img-top" src="cardimg2.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <div class="dropdown dropend ms-5">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+              more details...
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2BHK</a></li>
+              <li><a class="dropdown-item text-danger" href="#">4.9 Rating</a></li>
+              <li><a class="dropdown-item" href="#">Free WIFI</a></li>
+              <li><a class="dropdown-item" href="#">A/C</a></li>
+            </ul>
+          </div>
+          <h4 class="card-title">RS - 999 per day</h4>
+          <p class="card-text">ID - 012</p>
+          <button class="btn btn-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card col-4" style="width:400px">
+        <img class="card-img-top" src="cardimg3.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <div class="dropdown dropend ms-5">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+              more details...
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1BHK</a></li>
+              <li><a class="dropdown-item text-danger" href="#">4.2 Rating</a></li>
+            </ul>
+          </div>
+          <h4 class="card-title">RS - 599 per day</h4>
+          <p class="card-text">ID - 013</p>
+          <button class="btn btn-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="row ms-5">
+      <div class="card col-4" style="width:420px">
+        <img class="card-img-top" src="cardimg5.jpg" alt="Card image" style="width:95%">
+        <div class="card-body">
+          <div class="dropdown dropend ms-5">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+              more details...
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2BHK</a></li>
+              <li><a class="dropdown-item text-danger" href="#">4.5 Rating</a></li>
+              <li><a class="dropdown-item" href="#">A/C</a></li>
+            </ul>
+          </div>
+          <h4 class="card-title">RS - 759 per day</h4>
+          <p class="card-text">ID - 011</p>
+          <button class="btn btn-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card col-4" style="width:400px">
+        <img class="card-img-top" src="cardimg4.jog.avif" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <div class="dropdown dropend ms-5">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+              more details...
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">3BHK</a></li>
+              <li><a class="dropdown-item text-danger" href="#">4.3 Rating</a></li>
+              <li><a class="dropdown-item" href="#">Free WIFI</a></li>
+              <li><a class="dropdown-item" href="#">A/C</a></li>
+            </ul>
+          </div>
+          <h4 class="card-title">RS - 949 per day</h4>
+          <p class="card-text">ID - 012</p>
+          <button class="btn btn-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+
+      <div class="card col-4" style="width:400px">
+        <img class="card-img-top" src="cardimg7.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <div class="dropdown dropend ms-5">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+              more details...
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">1BHK</a></li>
+              <li><a class="dropdown-item text-danger" href="#">4.1 Rating</a></li>
+              <li><a class="dropdown-item" href="#">A/C</a></li>
+            </ul>
+          </div>
+          <h4 class="card-title">RS - 559 per day</h4>
+          <p class="card-text">ID - 013</p>
+          <button class="btn btn-primary ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+            BOOK NOW
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <div class="mt-2 ms-2 me-2 p-2  text-dark border border-primary">
+    <h1>PLATINUM MEMBERSHIP</h1>
+    <b>
+      <p class="ms-5">Feel the Experience.....Enjoy LOT</p>
+    </b>
+  </div><br>
+
+  <div class="container" id="">
+    <div class="row">
+      <div class="col-6">
+        <img src="plcardimg1.jpg" alt="" class="img-fluid">
+        <h4>RS - 1799/Per DAY</h4>
+        <button class="btn btn-primary ms-5 mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+          BOOK NOW
+        </button>
+      </div>
+
+      <div class="col-6 mt-3 pt-2">
+        <img src="plcardimg2.jpg" alt="" class="img-fluid">
+        <h4>RS - 1599/Per DAY</h4>
+        <button class="btn btn-primary ms-5 mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcan">
+          BOOK NOW
+        </button>
+
+      </div>
+      <div class="col">
+        <h1 class="fw-bolder ">Only For MemberShip Users</h1><br>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container-fluid bg-dark row" style="height: 200px;">
+    <div class="col">
+      <h4 id="contact" class="text-white ms-3 mt-3">Contact</h4>
+      <p class="text-white ms-5 mt-3 fa fa-phone">  +91 9876293870</p>
+      <br>
+      <p class="text-white ms-5 fa fa-edge">  heavenroom@email.com</p>
+      <h5 id="about" class="fa fa-copyright text-white " style="color:  white; margin-left: 80%;">2024 Heaven Rooms PVT.LTD.<br>Country India USA</h5>
+    </div>
+  </div>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</body>
+
+</html>
